@@ -9,14 +9,16 @@
     <h1>This is a heading</h1>
     <p1 style="color:green"> This is a paragraph </p1>
     <div> And in this line there's a basketball ;) </div>
-    <img src="palla222.jpg" alt="ball picture :)" width= "100" height="100" />
-    <input type= "button" id="button1" style="position: absolute; left: 20px; top: 300px"/> onclick="funzione1();"/>
+    //
+    <img src="palla222.jpg" id="palla" alt="ball picture :)" width= "100" height="100" />
+    <input type= "button" id="button1" style="position: absolute; left: 20px; top: 300px"/> onclick="funzione1()"/>
   </body>
   
   <script>
     function funzione1() {
- 	// voglio che la palla si muovi
- 
+ 	// voglio che la palla sparisca
+      document.getElementbyId("palla").style.display= "none";
+      
       
 }
     
